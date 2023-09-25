@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 5</title>
+</head>
+<body>
+    
+    <script>
+        let x2=prompt("entrer le coefficient de x carré");
+        let x=prompt('entrer la valeur de x');
+        let cons=prompt("entrer le terme independant");
+        let delta=(x*x)-(4*x2*cons);
+        alert("delat = "+delta);
+        if(delta == 0){
+            let x_3=-x/(2*x2);
+            alert("l'equation "+x2+"x carré+ "+x+"x + "+cons+" = 0\n delta = "+delta+" \n la racine est egale à "+x_3); 
+        }
+        else if(delta < 0){
+                alert("pas de solution pour cette equation");
+        }
+        else if(delta > 0){
+            let x_1=(-x+delta.sqrt())/2*x2;
+            let x_2=(-x-delta.sqrt())/2*x2;
+            alert("l'equation "+x2+"x carré+ "+x+"x + "+cons+" = 0\n delta = "+delta+" \n les racines sont \n x1= "+x_1+" \n x2= "+x_2); 
+        }
+    </script>
+</body>
+</html>

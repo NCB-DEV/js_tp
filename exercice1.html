@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 1</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <form action="">
+        <label for="nom">nom</label>
+        <input type="text" name="nom" id="nom">
+        <label for="mdp">mot de passe</label>
+        <input type="password" name="mdp" id="mdp">
+        <h4 id="clique">cliquez-moi</h4>
+    </form>
+    <script type="javascript" src="exercice1.js"></script>
+    <script>
+        let nom=document.getElementById('nom');
+        let mdp=document.getElementById('mdp');
+        let clique=document.getElementById('clique');
+        let mdps=mdp.value.toUpperCase();
+        if(mdps=="NATHANBUKASA"){
+            alert("bonjour monsieur "+noms);
+            console.log("bonjour monsieur "+noms)
+        }
+        else{
+            alert("vous avez entré un mauvais mot de passe \n au-revoir");
+            console.log("vous avez entré un mauvais mot de passe \n au-revoir")
+        }
+    </script>
+</body>
+</html>
